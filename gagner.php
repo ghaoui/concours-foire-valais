@@ -1,14 +1,20 @@
 <?php 
 switch ($code['prix']) {
-	case 'casquette':
-		$px = "Un verre de blanc";
+	case 'jsverbier':
+		$px = "Journée ski à Verbier";
 		break;
-	case 'sonnette':
-		$px = "UNE SONNETTE";
+	case 'jsbruson':
+		$px = "Journée ski à Bruson";
 		break;
-	case 'stylo':
-		$px = "UN STYLO";
+	case 'jluge':
+		$px = "Journée Luge";
 		break;
+  case 'vblanc':
+    $px = "Verres de blanc";
+    break;
+  case 'raclette':
+    $px = "Raclette";
+    break;
 }
 $body = ' <table align="center" width="850" border="0" cellspacing="0" cellpadding="0"> 
       <tr > 

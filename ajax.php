@@ -48,24 +48,32 @@
 			$config['nbGagneJour'] = 0;
 			$config['posGagnant'] = rand(1,$config['nbJoueurParGagnant']);
 			$config['posEncour'] = 1;
-			$config['nbcasquettesgagnant'] = 0;
-			$config['nbsonnettesgagnant'] = 0;
-			$config['nbstylosgagnant'] = 0;
+			$config['nbjsverbiersgagnant'] = 0;
+			$config['nbjsbrusonsgagnant'] = 0;
+			$config['nbjlugesgagnant'] = 0;
+			$config['nbvblancsgagnant'] = 0;
+			$config['nbraclettegagnant'] = 0;
 			updateIni($config);
 		}
 
 		if($config['nbGagneJour'] < $config['maxGagnant']){
 			if($config['posEncour'] == $config['posGagnant']){
 				
-				if($config['nbcasquettesgagnant'] < $config['maxcasquettes'] ){
-					$prix = "casquette";
-					$config['nbcasquettesgagnant']++;
-				}elseif($config['nbsonnettesgagnant'] < $config['maxsonnettes']){
-					$prix = "sonnette";
-					$config['nbsonnettesgagnant']++;
-				}elseif($config['nbstylosgagnant'] < $config['maxstylos']){
-					$prix = "stylo";
-					$config['nbstylosgagnant']++;
+				if($config['nbjsverbiersgagnant'] < $config['maxjsverbiers'] ){
+					$prix = "jsverbier";
+					$config['nbjsverbiersgagnant']++;
+				}elseif($config['nbjsbrusonsgagnant'] < $config['maxjsbrusons']){
+					$prix = "jsbruson";
+					$config['nbjsbrusonsgagnant']++;
+				}elseif($config['nbjlugesgagnant'] < $config['maxjluges']){
+					$prix = "jluge";
+					$config['nbjlugesgagnant']++;
+				}elseif($config['nbvblancsgagnant'] < $config['maxvblancs']){
+					$prix = "vblanc";
+					$config['nbvblancsgagnant']++;
+				}elseif($config['nbraclettegagnant'] < $config['maxraclettes']){
+					$prix = "raclette";
+					$config['nbraclettegagnant']++;
 				}
 				if($prix!="none"){
 					$image = 'gagner';

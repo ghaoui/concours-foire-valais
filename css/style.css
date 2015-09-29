@@ -1,0 +1,414 @@
+@font-face {
+	font-family:"Lato Black";
+	src:url("../fonts/Lato-Black.eot?") format("eot"),
+	url("../fonts/Lato-Black.woff") format("woff"),
+	url("../fonts/Lato-Black.ttf") format("truetype"),
+	url("../fonts/Lato-Black.svg#Lato-Black") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+
+ @font-face {
+ 	font-family:"Lato Bold";
+ 	src:url("../fonts/Lato-Bold.eot?") format("eot"),
+ 	url("../fonts/Lato-Bold.woff") format("woff"),
+ 	url("../fonts/Lato-Bold.ttf") format("truetype"),
+ 	url("../fonts/Lato-Bold.svg#Lato-Bold") format("svg");
+ 	font-weight:normal;
+ 	font-style:normal;
+ }
+
+ @font-face {
+ 	font-family:"Lato Regular";
+ 	src:url("../fonts/Lato-Regular.eot?") format("eot"),
+ 	url("../fonts/Lato-Regular.woff") format("woff"),
+ 	url("../fonts/Lato-Regular.ttf") format("truetype"),
+ 	url("../fonts/Lato-Regular.svg#Lato-Regular") format("svg");
+ 	font-weight:normal;
+ 	font-style:normal;
+ }
+
+.html{
+	height: 100%;
+}
+label{
+  font-weight: normal;
+  cursor: pointer;
+}
+.bgverbier{
+	background-image: url("../images/background-verbier-foire.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #E6E6E6;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+}
+#header .img-responsive {
+  margin: 0 auto;
+}
+.bgverbier #header  .logoheader.imgLogo{
+		height: 80px;
+	}
+.bgverbier #header  .logoheader.tentez{
+	padding-bottom: 16px;
+}
+.bgverbier #header .logoheader{
+  background-color: #e30513;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.bgverbier #header .logoheader p{
+	margin: 0px;
+	color: #fff;
+	font-family:"Lato Black";
+	font-size: 19px;
+
+}
+
+.bgverbier #header .link{
+	color: #fff;
+	font-family:"Lato Black";
+	font-size: 14px;
+	background-color: #e30513;	
+    display: block;
+    padding: 20px;
+}
+.bgverbier #header .link:hover{
+	color: #fff;
+}
+
+.bgverbier #header a.linkface{
+	margin-left: -13px;
+    margin-right: -15px;
+}
+.bgverbier #header a.linkverb{
+    margin-left: -13px;
+    margin-right: -15px;	
+}
+
+.bgverbier #header a.linkface span{
+	display: block;
+
+}
+
+.bgverbier #header a.linkverb span{
+	display: block;
+}
+
+
+#conteneur{
+	margin-top: 4%;
+	position: relative;
+}
+
+#conteneur .bgForm{
+background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+    margin: 0px auto;
+    padding-top: 60px;
+    width: 47%;
+    position: relative;
+    bottom: 50px;
+}
+#conteneur .imgTitle{position: relative;z-index: 2;}
+#conteneur .bgForm .form-group{
+	margin: 4px auto;
+    width: 85%;
+}
+
+#conteneur .bgForm .form-group{
+	border-radius: 0;
+}
+#conteneur .bgForm  .ou{
+	color: #333;
+	font-family:"Lato Bold";
+	font-size: 22px;
+}
+
+button {
+	color: #fff;
+	background-color: #3B5998;
+}
+
+.btn {
+	border-radius: 0;
+    margin-bottom: 20px;
+    padding: 8px 50px;
+    background-color: #e41e26;
+    color: #fff;
+    font-family:"Lato Regular";
+    font-size: 22px;
+    border:0;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 100%;
+  background: #1c6fa5;
+  z-index: -1;
+  -webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+  transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+  -webkit-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s, background-color 0.3s;
+  transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+}
+.btn:hover,
+.btn:focus,
+.btn.focus {
+  color: #e41e26;
+  border-color: #e41e26;
+}
+
+.btn:hover::before {
+  opacity: 1;
+  background-color: #fff;
+  -webkit-transform: rotate3d(0, 0, 1, 0deg);
+  transform: rotate3d(0, 0, 1, 0deg);
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+ #conteneur .bgForm .condition{
+	margin: 0 auto;
+    width: 85%;
+    color: #333;
+	font-family:"Lato Bold";
+	font-size: 12px;
+	 margin-top: 10px;
+}
+ #conteneur .bgForm .condition input{
+ 	float: left;
+ 	margin-top: 1px;
+ }
+
+
+
+#footer{
+	 bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+#footer .footer{
+	background-color: #333333;
+	padding-top: 10px;
+}
+
+#footer .footer ul li{
+	list-style: none;
+	border-right: 1px solid #fff;
+}
+#footer .footer ul li:last-child{
+	border: none;
+}
+
+#footer .footer ul li a{
+	color: #fff;
+	font-family:"Lato Regular";
+	font-size: 13px;
+	text-decoration: none;
+}
+
+
+.mrgTop250{
+	margin-top: 250px;
+}
+
+#conteneur .bgtransparent{
+	background: rgba(255, 255, 255, 0.8);
+	 margin-top: -71px;
+    padding-bottom: 154px;
+    padding-top: 100px;
+}
+#conteneur .bgtransparent p{
+	margin: 0px;
+	color: #e40513;
+	font-family:"Lato Black";
+	font-size: 42px;
+}
+.bgtransparent .gratter{
+	background-image: url(../images/billet-fond-grattage-verbier.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 20px;
+	 height: 276px;
+	position: relative;
+}
+
+
+a.linkface::before, a.linkverb::before {
+	position: absolute;
+	top: -100px;
+	left: 0;
+	width: 100%;
+	height: 70px;
+	opacity: 0.6;
+	background: #fff;
+	content: '';
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+a.linkface:hover::before, a.linkverb:hover::before {
+	-webkit-transform: translate3d(0,150%,0);
+	transform: translate3d(0,150%,0);
+} 
+
+
+@media screen and (max-width: 980px){
+	.bgverbier #header  .logoheader.tentez{
+		border-top: 1px solid #fff;
+	    text-align: center;
+	}
+
+}
+
+@media screen and (max-width: 767px){
+
+	 
+	.bgverbier #header a.linkverb img{
+	    margin:0 auto;
+	}
+	.bgverbier #header a.linkface img{
+	    margin:0 auto;
+	}
+
+	.bgverbier #header a.linkface{
+		margin-left: -15px;
+	border-left: 1px solid #fff;
+
+	}
+	.bgverbier #header a.linkverb{
+		    margin-left: -15px;
+	border-left: 1px solid #fff;
+
+	}
+
+	.bgverbier #header  .logoheader.tentez{
+		border-top: 1px solid #fff;
+	    text-align: center;
+	}
+
+	.bgverbier #header  .logoheader.imgLogo{
+		height: 115px;
+        padding-top: 30px;
+	}
+
+	.margin-top-20{
+		margin-top: 240px;
+		z-index: 1;
+	}
+	#conteneur .bggray{
+		background-color: #e6e6e6;
+	    bottom: 27px;
+	    height: 866px;
+	    position: absolute;
+	    width: 100%;
+	}
+	#conteneur .bgForm {
+		width: 75%;
+	}
+
+	#conteneur img.superprix{
+		margin-bottom: 30px;
+	    margin-top: 70px;
+	}
+	#footer {
+		 position: relative;
+	    width: 100%;
+	  
+	}
+
+	a.linkface::before, a.linkverb::before {
+	top: -148px;
+	height: 102px;
+}
+	
+}
+
+@media screen and (max-width: 434px){
+
+	.bgverbier #header a.linkface span {
+		    margin-top: 10px;
+		}
+
+	.bgverbier #header .logoheader.imgLogo {
+		    height: 135px;
+		    padding-top: 60px;
+		}
+
+}
+	
+    #imgGratter{
+		width: 330px;
+		height: 250px;
+		-webkit-user-select: none; 
+		-khtml-user-select: none;
+		-moz-user-select: none; 
+	}
+	#imgGratter img{
+		top:10px;
+	}
+	#imgGratter canvas{
+		left: 0;
+		top:10px;
+	}
+
+#codeGratter{
+	bottom: 0;
+    color: #e40513;
+    display: none;
+    font-size: 45px;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+#msgMail{
+    display: none;
+    background: #fff ;
+    color: #e40513;
+    display: none;
+    font-family: "Lato Regular";
+    font-size: 33px;
+    height: 250px;
+    left: 0;
+    padding-top: 15px;
+    position: relative;
+    right: 0;
+    top: 13px;
+    width: 330px;
+
+}
+#bgloading{
+	background-color: rgba(0, 0, 0, 0.66);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+    display: none;
+}
+#bgloading img{
+	left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.5;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 70px;
+}

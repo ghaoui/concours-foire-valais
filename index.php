@@ -121,15 +121,21 @@ $translate = @parse_ini_file('langue/'.$langFile);
         <div class="row footer">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
             <ul class="list-inline">
-              <li><a href="">Crédit</a></li>
-              <li><a href="">Mentions légales</a></li>
-              <li><a href="">Réglement</a></li>
-              <li><a href="">Contactez-nous</a></li>
+              <li><a href="" data-toggle="modal" data-target="#creditText">Crédit</a></li>
+              <li><a href="" data-toggle="modal" data-target="#mentionText">Mentions légales</a></li>
+              <li><a href="" data-toggle="modal" data-target="#regleText">Réglement</a></li>
+              <li><a href="" data-toggle="modal" data-target="#contactText">Contactez-nous</a></li>
             </ul>
           </div>
         </div>
       </div>
     <div id="bgloading"><img src="images/loading.gif" alt=""></div>
+    <?php 
+    require 'contactez.php';
+    require 'mentions.php';
+    require 'reglement.php';
+    require 'credits.php';
+    ?>
 </body> 
 </html>
 
